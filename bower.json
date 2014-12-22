@@ -1,0 +1,19 @@
+{
+  "name": "Prototyping",
+  "version": "0.0.1",
+  "authors": [
+    "jakabadambalazs <jakabadambalazs@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.15",
+    "augment": "~4.3.0"
+  }
+}
