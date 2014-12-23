@@ -7,6 +7,10 @@ define([], function () {
         };
     };
 
+    BaseCard.prototype.doSomething = function() {
+        console.log("Doing something...");
+    };
+
 
 
 

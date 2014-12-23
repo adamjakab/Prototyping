@@ -5,7 +5,8 @@ console.time("BOOTSTRAP");
 requirejs.config({
     baseUrl: 'js',
     paths: {
-        augment: '../bower_components/augment/augment',
+        underscore: '../bower_components/underscore/underscore-min',
+        OptionsManager: 'lib/OptionsManager',
         BaseCard: 'proto/BaseCard',
         PassCard: 'proto/PassCard'
     },

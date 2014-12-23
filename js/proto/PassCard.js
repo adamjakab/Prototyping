@@ -1,9 +1,18 @@
 define(['BaseCard'], function (BaseCard) {
-
+    /**
+     *
+     * Using Parasitic Inheritance
+     *
+     * @param _name
+     * @param _group
+     * @returns {BaseCard}
+     * @constructor
+     */
     var PassCard = function(_name, _group) {
         var HOST = new BaseCard(_name);
         var group = _group;
         //
+
         //local/private methods
         var test2 = function() {
             console.log("Test2-"+HOST.getName());
