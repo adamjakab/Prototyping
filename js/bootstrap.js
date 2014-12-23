@@ -1,6 +1,7 @@
 /**
  * Main background application
  */
+console.time("BOOTSTRAP");
 requirejs.config({
     baseUrl: 'js',
     paths: {
@@ -15,4 +16,5 @@ requirejs.config({
 
 require(['main'], function(MAIN) {
     MAIN.boot();
+    console.timeEnd("BOOTSTRAP");
 });

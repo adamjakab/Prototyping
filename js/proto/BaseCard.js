@@ -1,15 +1,10 @@
 define([], function () {
 
-    var BaseCard = {
-
-        setName: function(name) {
-            this.name = name;
-        },
-
-        BCtest: function() {
-            console.log("BCtest---" + this.name);
-        }
-
+    var BaseCard = function(_name) {
+        var name = _name;
+        this.getName = function() {
+            return name;
+        };
     };
 
 
