@@ -8,13 +8,13 @@ define(['BaseCard'], function (BaseCard) {
      * @returns {BaseCard}
      * @constructor
      */
-    var PassCard = function(_name, _group) {
-        var HOST = new BaseCard(_name);
-        var group = _group;
+    let PassCard = function(_name, _group) {
+        let HOST = new BaseCard(_name);
+        let group = _group;
         //
 
         //local/private methods
-        var test2 = function() {
+        let test2 = function() {
             console.log("Test2-"+HOST.getName());
         };
 
@@ -32,5 +32,13 @@ define(['BaseCard'], function (BaseCard) {
         return HOST;
     };
 
-    return(PassCard);
+
+    /**
+     * Export for Nodejs
+     */
+    if (typeof exports !== 'undefined') {
+        exports.PassCard = PassCard;
+    }
+
+    return PassCard;
 });

@@ -33,9 +33,6 @@ define(['ConfigurationManager'], function (ConfigurationManager) {
             config.merge({xxx:"yyy"});
             console.log(config.getAll());
 
-
-
-
         }
     };
 });

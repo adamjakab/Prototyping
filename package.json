@@ -6,7 +6,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha-phantomjs -R spec test/unitTests.html"
+    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -20,16 +20,7 @@
     "underscore": "^1.10.2"
   },
   "devDependencies": {
-    "mocha": "^7.1.1",
-    "phantomjs-prebuilt": "^2.1.16"
-  },
-  "___old_dependenciesdisabled": {
-    "dependencies": {},
-    "devDependencies": {
-      "mocha-phantomjs": "~3.5.3",
-      "chai": "~1.10.0",
-      "sinon": "~1.12.2",
-      "sinon-chrome": "~0.1.1"
-    }
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1"
   }
 }

@@ -1,7 +1,8 @@
 define([], function () {
 
-    var BaseCard = function(_name) {
-        var name = _name;
+    let BaseCard = function(_name) {
+        let name = _name;
+
         this.getName = function() {
             return name;
         };
@@ -13,6 +14,12 @@ define([], function () {
 
 
 
+    /**
+     * Export for Nodejs
+     */
+    if (typeof exports !== 'undefined') {
+        exports.BaseCard = BaseCard;
+    }
 
-    return(BaseCard);
+    return BaseCard;
 });
