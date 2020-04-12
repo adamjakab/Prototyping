@@ -6,9 +6,10 @@ requirejs.config({
     baseUrl: 'js',
     paths: {
         underscore: '../bower_components/underscore/underscore-min',
-        OptionsManager: 'lib/OptionsManager',
-        BaseCard: 'proto/BaseCard',
-        PassCard: 'proto/PassCard'
+        ConfigurationManager: '../bower_components/configuration-manager/ConfigurationManager'
+        //OptionsManager: 'lib/OptionsManager',
+        //BaseCard: 'proto/BaseCard',
+        //PassCard: 'proto/PassCard'
     },
     shim: {
     },

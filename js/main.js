@@ -1,10 +1,10 @@
-define(['underscore', 'OptionsManager', 'BaseCard', 'PassCard'], function (_, OptionsManager, BaseCard, PassCard) {
+define(['ConfigurationManager'], function (ConfigurationManager) {
     return {
         boot: function() {
             console.log("booting...");
 
 
-            var config = new OptionsManager({
+            var config = new ConfigurationManager({
                 name:       "adam",
                 age:        20,
                 work:       "ITC",
@@ -20,6 +20,8 @@ define(['underscore', 'OptionsManager', 'BaseCard', 'PassCard'], function (_, Op
                     }
                 }
             });
+            config.test();
+
 
             console.log(config.getAll());
             console.log("Project name: " + config.get("projects.PPM.name","BOH?"));
@@ -31,24 +33,7 @@ define(['underscore', 'OptionsManager', 'BaseCard', 'PassCard'], function (_, Op
             config.merge({xxx:"yyy"});
             console.log(config.getAll());
 
-            //config.set("name", "Adam").set("age", 40);
-            //config.set("a1",false);
-            //console.log(config.getAll());
 
-
-
-            /*
-            var E = new PassCard("Adam", "ETC");
-            console.log(E.getName());
-            console.log(E.getGroup());
-            E.test3();
-
-            var EE = new PassCard("Vito", "CEO");
-            console.log(EE.getName());
-            console.log(EE.getGroup());
-            EE.test3();
-            EE.doSomething();
-            */
 
 
         }
