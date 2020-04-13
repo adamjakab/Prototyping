@@ -82,7 +82,8 @@
         };
 
         /**
-         * Simple Checksum computation of the current data - todo: need proper crc32 implementation here
+         * Simple Checksum computation of the current data
+         * todo: need proper crc32 implementation here
          * @return {boolean} - returns true if there are changes in data
          */
         var computeCheckum = function() {
